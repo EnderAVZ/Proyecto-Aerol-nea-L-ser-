@@ -1,0 +1,75 @@
+Inicio del programa Proyecto
+    Declarar variables: monto, boletos, vuelo, destino, destino2, escala, i, edad, plan como enteros
+    Declarar variables: usuario, nombre, cedula como cadenas de caracteres
+    Declarar variables: montoPersona, total, pago, vuelto como números reales
+    Declarar variable: edadUsuario como entero
+    Declarar variable: opcion como entero
+    
+    Iniciar sesión del usuario para comprar los boletos
+    Solicitar y leer nombre de usuario
+    Solicitar y leer edad del usuario
+    
+    Si la edad del usuario es menor de 18 años entonces
+        Mostrar mensaje: "No está permitido vender boletos a menores de 18 años"
+        Detener el programa
+    
+    Mostrar opciones al usuario:
+    - Ver los vuelos disponibles o tipos de vuelo
+    - Verificar sistema
+    - Salir
+    Leer opción seleccionada por el usuario
+    
+    Según la opción seleccionada por el usuario hacer:
+        Caso 1: // Ver los vuelos disponibles o tipos de vuelo
+            Mostrar opciones de tipo de vuelo: Vuelo Nacional o Vuelo Internacional
+            Leer opción de tipo de vuelo seleccionada por el usuario
+        Caso 2: // Verificar sistema
+            Solicitar y leer el número de vuelo para verificar su estado
+        Caso 3: // Salir
+            Mostrar mensaje de despedida y terminar el programa
+
+    Según el tipo de vuelo seleccionado por el usuario hacer:
+        Caso 1: // Vuelo Nacional
+            Mostrar lista de vuelos nacionales disponibles
+            Leer destino seleccionado por el usuario
+            Asignar el costo del boleto según el destino seleccionado
+        Caso 2: // Vuelo Internacional
+            Mostrar lista de vuelos internacionales disponibles
+            Leer destino seleccionado por el usuario
+            Asignar el costo del boleto según el destino seleccionado
+    
+    Solicitar tipo de ruta de viaje:
+    - Un solo destino
+    - Ida y vuelta
+    - Escala hacia un segundo destino (vuelo nacional)
+    - Escala hacia un segundo destino (vuelo internacional)
+    Leer tipo de ruta seleccionada por el usuario
+    
+    Según el tipo de ruta seleccionada por el usuario hacer:
+        Caso 1: // Un solo destino
+            Mostrar el costo del boleto para un solo destino
+        Caso 2: // Ida y vuelta
+            Calcular y mostrar el costo adicional por el retorno
+        Caso 3: // Escala nacional
+            Mostrar lista de destinos para la escala nacional
+            Leer destino de la escala seleccionado por el usuario
+            Calcular y mostrar el costo adicional por el boleto con escala nacional
+        Caso 4: // Escala internacional
+            Mostrar lista de destinos para la escala internacional
+            Leer destino de la escala seleccionado por el usuario
+            Calcular y mostrar el costo adicional por el boleto con escala internacional
+    
+    Solicitar cantidad de boletos a comprar
+    Leer cantidad de boletos
+    
+    Para cada boleto a comprar hacer:
+        Solicitar y leer datos del pasajero: nombre, cédula, edad
+        Calcular el costo del boleto para el pasajero considerando descuentos y clase seleccionada
+        Sumar el costo del boleto al total
+    
+    Mostrar el costo total de los boletos
+    Solicitar monto con el que se realizará el pago
+    Calcular y mostrar vuelto si el pago es mayor que el costo total
+    Mostrar mensaje de agradecimiento por la compra y terminar el programa
+    Mostrar mensaje de despedida
+Fin del programa
