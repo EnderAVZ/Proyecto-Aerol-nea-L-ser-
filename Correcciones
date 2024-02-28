@@ -1,0 +1,30 @@
+- Al momento de ingresar edad errada se cierra el programa, lo ideal seria que como estan trabajando con sentencias repetitivas, el mismo cumpla con la condición de no cerrarse hasta que ingrese la edad correcta.
+- No tiene validaciones de números y letras
+- Si ingreso en la lista de vuelos una opción diferentes a las que existen el programa continua su porceso.
+- Una vez pagas el boleto, el programa no te deja volver al menú principal, recuerden que estan trabajando con sentencias repetitivas
+- Se supone que este case corresponde a las opciones de menú principal, ¿Por qué tomar el mismo para las opciones de vuelo? El case de vuelo, debe estar dentro del primer caso. Mejorar lógica
+  writeln ('Seleccione una opcion: ');
+	writeln('1. Ver los vuelos disponibles o tipos de vuelo');
+	writeln('2. Verificar sistema');
+	writeln('3. Salir');
+	readln(opcion);
+	
+	case opcion of
+		1: begin 
+		writeln ('Que tipo de vuelo desea');
+		writeln ('1. Vuelo Nacional');
+		writeln ('2. Vuelo Internacional');
+		readln (vuelo);
+		//Se decide entre vuelo nacional o internacional
+		end;
+		2: begin
+		writeln('Por favor, ingrese el  numero de vuelo: ');
+		//Se establece la logica de la misma para verificar el estado del vuelo
+		end;
+		3: begin
+			writeln('Gracias por utilizar nuestros servicios. Vuelva pronto! ');
+			end;
+		end;
+- El módulo de "Ver sistema" no fue realizado.
+- No tiene validaciones de nigún tipo.
+- Como recomendación tambien les hago, limpiar la consola mientras se ejecuta el programa.
